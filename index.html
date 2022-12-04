@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <div class="logo">
+                <img src="./img/odin-lined.png" alt="odin-logo">
+                <h1 class="logo-title">ODIN</h1>
+            </div>
+            <div class="photo-copyright">
+                <span>Photo by Halie West on Unsplash</span>
+            </div>
+        </div>
+        <div class="content">
+            <div class="top-right">
+                <div class="header">
+                    <h1>This is not a real online service! You know you need something like this in you life
+                        to help you realize your deepest dream. Sign up <em>now</em> to get started.
+                    </h1>
+                </div>
+                <div class="header">
+                    <h1>You <em>know</em> you want to.</h1>
+                </div>
+            </div>
+            <div class="middle-right">
+                <div class="middle-header">
+                    <h1>Let's do this!</h1>
+                </div>
+                <form action="http://httpbin.org/post" method="post">
+                    
+                    <div class="form">  
+                        <div class="form-left">
+                            <div class="form-pair">
+                                <label for="first-name">First name</label>
+                                <input type="text" id="first-name">
+                            </div>
+                            <div class="form-pair">
+                                <label for="email">Email</label>
+                                <input type="email" id="email">
+                            </div>
+                            <div class="form-pair">
+                                <label for="password">Password</label>
+                                <input class="error" type="password" id="password" onchange="passCompare()">
+                                <div class="error-msg">*Passwords do not match</div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-right">
+                            <div class="form-pair">
+                                <label for="last-name">Last name</label>
+                                <input type="text" id="last-name">
+                            </div>
+                            <div class="form-pair">
+                                <label for="phone-number">Phone number</label>
+                                <input type="text" id="phone-number">
+                            </div>
+                            <div class="form-pair">
+                                <label for="confirm-password">Confirm password</label>
+                                <input class="error" type="password" id="confirm-password" onchange="passCompare()">
+                            </div>
+                        </div>
+                        
+                    </div> 
+
+                </form>
+            </div>
+            <div class="bottom-right">
+                <div>
+                    <button class="btn-green">Create Account</button>
+                </div>
+                <div>
+                    <span>Already have an account?</span>
+                    <span class="greentext">Log in</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
